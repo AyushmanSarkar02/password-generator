@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="container flex">
+            <h1 class="pg" style="color: aliceblue;">PASSWORD GENERATOR</h1>
+            <div class="display-container flex">
+                <div>
+                    <input style="background-color:rgba(9, 8, 57, 0); border: none;" readonly placeholder="Password" class="display" data-passwordDisplay>
+
+                </div>
+                <div class="cpyimg">
+                    <button  data-copy style="background-color: rgba(5, 4, 48, 0); border: none;">
+                        <span data-copyMsg></span>
+                        <img src="./assets/copy.svg" alt="copy" width="30" height="30">
+                    </button>
+
+                </div>
+                
+                
+
+            </div>
+            <br>
+
+        <div class="input-container">
+            <div class="length-container flex">
+                <p style="color: aliceblue; margin-top: 25px; margin-left: 18px;"><strong>Password Length</strong></p>
+                <p style="color: yellow;margin-top: 25px; margin-right: 25px;" data-lengthNumber><strong>0</strong></p>
+            </div>
+            <div class="slide flex">
+                <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+            </div>
+            
+            <div class="cb">
+                <input class="geekmark " type="checkbox" id="uppercase">
+                <label for="uppercase"><b>Include Uppercase Letters</b></label>
+            </div>
+                <br>
+            <div class="cb">
+                    <input class="geekmark " type="checkbox" id="lowercase">
+                    <label for="lowercase"><b>Include Lowercase Letters</b></label>
+            </div>
+               <br>
+            <div class="cb">
+                    <input class="geekmark " type="checkbox" id="numbers">
+                    <label for="numbers"><b>Include Numbers</b></label>
+            </div>
+               <br>
+            <div class="cb">
+                    <input class="geekmark " type="checkbox" id="symbols">
+                    <label for="symbols"><b>Include Symbols</b></label>
+            </div>
+            <div class="strength-container">
+                <p><strong>Strength</strong></p>
+                <div style="margin-right: 14px;" class="indic" data-indicator>
+
+                </div>
+
+            </div>
+            <div class="Generate-password">
+                <button class="generateButton"><strong>GENERATE PASSWORD</strong></button>
+
+            </div>
+            </div>
+           
+               
+            </div>
+            <script src="index.js"></script>
+    
+</body>
+</html>
